@@ -49,12 +49,6 @@ public class HW1 {
         else System.out.println(q3);}
         System.out.println("");
 
-        ///Четвертая задача
-
-        int num1 = 3;
-        int num2 = -4;
-        int num3 = 43;
-        int mid;
 
 
 
@@ -82,12 +76,21 @@ public class HW1 {
         System.out.println("");
 
         /// Цикл 4
+        int numcheck = 97;
 
-
-
-
-
-
+        for ( int i=2; i < numcheck; i++) {
+            if ( numcheck%i == 0) {
+                System.out.println("Число "+numcheck+" не является простым");
+                return;
+            }
         }
+        System.out.println("Число "+numcheck+" простое");
     }
+
+
+
+
+
+}
+
 
