@@ -87,7 +87,19 @@ public class HW1 {
         System.out.println("Число "+numcheck+" простое");
     }
 
-
+        ///// Задача про упорядочивание по возрастанию (не тестировал)
+        int num01, num02, num03, w;
+        while(num01>num02||num02>num03){
+            if (num01>num02){ w=num01;
+                              num01= num02;
+                             num02 = w;
+                            }
+             if (num02>num03){ w=num02;
+                              num02= num03;
+                             num03 = w;
+                            }
+        }
+                     
 
 
 
