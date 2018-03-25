@@ -1,5 +1,4 @@
-import java.util.Arrays;
-import java.util.Random;
+import java.util.*;
 
 public class HW2 {
     public static void main(String[] args) {
@@ -89,6 +88,34 @@ public class HW2 {
 
         //// Задача шестая
 
+        //// Строки, задача 1
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите строку: ");
+        String mainString = sc.nextLine();
+        System.out.println("Введите строку которую мы хотим найти для замены");
+        String find = sc.nextLine();
+        System.out.println("Введите строку которой мы заменем выбранную выше строку");
+        String replace = sc.nextLine();
+        String result = mainString.replace(find, replace);
+        System.out.println("После замены результат: "+result);
+
+        //// Строки, задача 2
+
+        Set<Character> set = new HashSet<>();
+        StringBuilder sb = new StringBuilder();
+        for (char c : result.toCharArray())
+        {
+            if (!set.contains(c))
+            {
+                set.add(c);
+                sb.append(c);
+            }
+        }
+        String result2 = sb.toString();
+        System.out.println("После удаления дублей результат: "+result2);
+
+        /// Строки, задача 3
 
 
     }
