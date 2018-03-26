@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ae284e82-0275-42db-b3f7-6a8ae9bf6a78" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/HW2.java" afterPath="$PROJECT_DIR$/src/HW2.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -346,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522006146465</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Очередные ночные посиделки">
+      <created>1522095796698</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1522095796698</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
