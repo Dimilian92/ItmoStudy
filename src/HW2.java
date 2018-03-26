@@ -88,6 +88,36 @@ public class HW2 {
 
         //// Задача шестая
 
+        Scanner scan = new Scanner (System.in);
+        int number=1;
+        for (;(number%2)!=0&&number>=0;) {
+            System.out.print("Введите четное чило!");
+            number = scan.nextInt();
+        }
+        int [] case6 = new int[number];
+        int ran3 = -5;
+        int ran4 = 5;
+        for (int i = 0; i<number; i++){
+            case6[i]=ran3+(int)(Math.random()*ran4);
+        }
+        System.out.println(Arrays.toString(case6));
+        int midel = number/2;
+        int sum11 =0;
+        int sum22 =0;
+        for (int i = 0;i<midel; i++  ){
+            sum11 = sum11+Math.abs(case6[i]);
+        }
+        for (int i = midel;i<number; i++  ){
+            sum22 = sum22+Math.abs(case6[i]);
+        }
+        if (sum11>sum22){
+        System.out.println("Сумма превой половины больше");
+        }
+        else if (sum11<sum22){
+            System.out.println("Сумма второй половины больше");
+        }
+        else
+            System.out.println("Сумма половин равны");
         //// Строки, задача 1
 
         Scanner sc = new Scanner(System.in);
