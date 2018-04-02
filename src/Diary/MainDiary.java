@@ -16,6 +16,9 @@ public class MainDiary  {
 
     public static void main(String[] args) {
         MainDiary dayBind = new MainDiary("Monday","May", 18);
+        DailyStaff dailyStaff = new DailyStaff();
+        MoneySaver moneySaver = new MoneySaver();
+        Health health = new Health();
         dayBind.dailyStaff.addDailyStaff("Buy some milk!");
         dayBind.dailyStaff.addDailyStaff("Do some yoga");
         dayBind.moneySaver.saveGodDameMoney();
