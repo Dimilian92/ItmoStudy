@@ -12,4 +12,9 @@ public class XMLReader implements ReaderInterface {
     public void write(String path) {
 
     }
+
+    @Override
+    public void open() {
+
+    }
 }

@@ -1,21 +1,33 @@
 package HW4;
 
-public class Reader {
+import java.util.Scanner;
 
-    static String getInstace(String path) {
-        if (файл - json) {
-            return JSONReader(String path);
+public class Reader implements ReaderInterface {
+
+    public abstract static class Handler{
+        protected String fileName;
+        protected Handler(String fileName){
+            this.fileName = fileName;
+        }
+
+    public static Handler  getInstace(String fileName) {
+        if (fileName.endsWith(".json")) {
+            return JSONReader(String fileName);
         } else {
-            return XMLReader(String path);
+            return XMLReader(String fileName);
         }
     }
 
     public static void main(String[] args) {
-        String path;
-        Reader reader = Reader.getInstace(String path);
+        String fileName;
+        Scanner sc = new Scanner(System.in);
+        fileName = sc.nextLine();
 
-        reader.read();
-        reader.write();
+        Reader reader;
+        reader = Reader.Handler(String fileName);
+
+        reader.read(String fileName);
+        reader.write(String fileName);
     }
 }
 

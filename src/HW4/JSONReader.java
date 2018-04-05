@@ -10,4 +10,9 @@ public class JSONReader implements ReaderInterface {
     public void write(String path) {
 
     }
+
+    @Override
+    public void open() {
+
+    }
 }
