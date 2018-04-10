@@ -31,7 +31,7 @@ public class WarPeace {
 
         ////////// сколько раз встречается слово
 
-
+        int bigestNumb = 0;
         HashMap<String, Integer> wordToCount = new HashMap<>();
         for (String word : arrLst)
         {
@@ -43,7 +43,14 @@ public class WarPeace {
         }
         for (String word : wordToCount.keySet())
         {
+
             System.out.println(word + " " + wordToCount.get(word));
+            if(bigestNumb < wordToCount.get(word)){
+                bigestNumb = wordToCount.get(word);
+            }
         }
+
+        System.out.println(bigestNumb);
+        System.out.println(wordToCount.containsValue(bigestNumb));
     }
 }
